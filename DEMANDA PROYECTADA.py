@@ -29,7 +29,6 @@ def lambda_handler(event, context):
     table = data_params.get("table")
     write_mode = data_params.get("write_mode")
     database_analytics = data_params.get("database_analytics")
-    # cen-ingesta.calidad-staging-dev
 
     particion = str(dt.datetime.now().year - 1)
     print(particion)
